@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ *main - Aprendiendo
+ *Return: Siempre 0 (Terminado)
  */
 
 int main(void)
