@@ -28,4 +28,8 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/* incluyendo programa 6-abs.c */
+
+int _abs(int);
+
 #endif
