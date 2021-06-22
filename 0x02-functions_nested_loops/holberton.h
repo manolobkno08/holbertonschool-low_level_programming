@@ -32,4 +32,8 @@ int print_sign(int n);
 
 int _abs(int);
 
+/* incluyendo programa 7-print_last_digit.c */
+
+int print_last_digit(int n);
+
 #endif
