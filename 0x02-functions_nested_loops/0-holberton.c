@@ -1,35 +1,20 @@
 #include <stdio.h>
 
 /**
- *main - Task 9
- *Return: Always 0 (Success)
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
 
 int main(void)
 {
+	
+	char hol[] = "Holberton";
+	int i;
 
-	int H = 'H';
-	int O = 'O';
-	int L = 'L';
-	int B = 'B';
-	int E = 'E';
-	int R = 'R';
-	int T = 'T';
-	int O2 = 'O';
-	int N = 'N';
-
-
-	putchar('H');
-	putchar('O');
-	putchar('L');
-	putchar('B');
-	putchar('E');
-	putchar('R');
-	putchar('T');
-	putchar('O');
-	putchar('N');
-
+	for (i=0; i < 9; i++)
+		putchar(hol[i]);
+	
 	putchar('\n');
-
 	return (0);
 }
