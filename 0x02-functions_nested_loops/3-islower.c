@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the code for Holberton School students.
- * c - variable
+ * @c: variable que contiene la letra.
  *
  * Return: Always 0.
  */
