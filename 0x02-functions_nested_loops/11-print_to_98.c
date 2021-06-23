@@ -9,16 +9,16 @@
 
 void print_to_98(int n)
 {
-	while (n > 98)
+	int cont;
+
+	for (cont = n; cont >= 98; cont--)
 	{
-		n--;
-		printf("%d, ", n);
+		printf("%d, ", cont);
 	}
 
-	while (n < 98)
+	for (cont = n; cont <= 98; cont++)
 	{
-		n++;
-		printf("%d, ", n);
+		printf("%d, ", cont);
 	}
 
 	_putchar('\n');
