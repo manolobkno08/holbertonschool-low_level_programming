@@ -44,12 +44,12 @@ void jack_bauer(void);
 
 void times_table(void);
 
-
-
-
-
 /* incluyendo programa 10-add.c */
 
 int add(int a, int b);
+
+/* incluyendo programa 11-print_to_98.c */
+
+void print_to_98(int n);
 
 #endif
