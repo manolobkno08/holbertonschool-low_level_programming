@@ -9,17 +9,30 @@
 
 void print_to_98(int n)
 {
-	int cont;
+	int i;
 
-	for (cont = n; cont >= 98; cont--)
+	if (n > 98)
 	{
-		printf("%d, ", cont);
+		for (i = n; i > 97; i--)
+		{
+			printf("%d", i);
+			if (i != 98)
+			{
+				printf(", ");
+			}
+		}
 	}
-
-	for (cont = n; cont <= 98; cont++)
+	else
 	{
-		printf("%d, ", cont);
-	}
+		for (i = n; i < 99; i++)
+		{
+			printf("%d", i);
+			if (i != 98)
+			{
+				printf(", ");
+			}
+		}
 
-	_putchar('\n');
+	}
+	printf("\n");
 }
