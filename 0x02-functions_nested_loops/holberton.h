@@ -36,4 +36,9 @@ int _abs(int);
 
 int print_last_digit(int n);
 
+/* incluyendo programa 8-24_hours.c */
+
+void jack_bauer(void);
+
+
 #endif
