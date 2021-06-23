@@ -40,5 +40,16 @@ int print_last_digit(int n);
 
 void jack_bauer(void);
 
+/* incluyendo programa 9-times_table.c */
+
+void times_table(void);
+
+
+
+
+
+/* incluyendo programa 10-add.c */
+
+int add(int a, int b);
 
 #endif
