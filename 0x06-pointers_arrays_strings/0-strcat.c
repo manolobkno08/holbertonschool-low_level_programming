@@ -9,8 +9,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *p;
 	char *q;
+	char *p;
 
 	for (q = dest; *q != '\0'; q++)
 	;
