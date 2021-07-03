@@ -1,20 +1,21 @@
 #include "holberton.h"
 
 /**
- *puts2 - funcion que muestra los caracteres de dos en dos
- *@str: variable puntero char
+ *leet - funcion
+ *@s: variable puntero char
  *
  *Return: Always 0
  */
 
 char *leet(char *s)
 {
-	int mayus[] = {65, 69, 79, 84, 76};	
+	int mayus[] = {65, 69, 79, 84, 76};
 	int minus[] = {97, 101, 111, 116, 108};
 
 	int remp[] = {52, 51, 48, 55, 49};
 
 	int i;
+
 	i = 0;
 
 	int j;
@@ -34,5 +35,6 @@ char *leet(char *s)
 		i++;
 	}
 
+	return (s);
 
 }
