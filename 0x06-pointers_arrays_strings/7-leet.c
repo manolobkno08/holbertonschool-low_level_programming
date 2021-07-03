@@ -15,10 +15,10 @@ char *leet(char *s)
 	int remp[] = {52, 51, 48, 55, 49};
 
 	int i;
+	int j;
 
 	i = 0;
 
-	int j;
 
 	while (s[i] != '\0')
 	{
