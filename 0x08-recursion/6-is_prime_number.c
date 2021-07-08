@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*is_prime_number - funcion numero primo
+*num_prime - funcion numero primo
 *@a: parametro
 *@b: parametro
 *Return: Always 0
