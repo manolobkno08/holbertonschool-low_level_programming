@@ -1,6 +1,9 @@
 #ifndef STRUCT_DOG_H
 #define STRUCT_DOG_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - funcion que contiene struct
  *@name: char name
