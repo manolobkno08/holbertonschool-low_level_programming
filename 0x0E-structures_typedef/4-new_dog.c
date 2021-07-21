@@ -1,51 +1,45 @@
 #include "dog.h"
+
 /**
- * new_dog - funcion que inicializa datos
- *@name: puntero char dentro de estructura
- *@age: variable dentro de estructura
- *@owner: puntero char dentro de estructura
- * Return: perrito
+ * new_dog - crear nuevo perrito
+ * @name: puntero nombre
+ * @age: edad
+ * @owner: puntero propietario
+ * Return: puntero dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *perrito = NULL;
-	int i, j, leni, lenj;
+	unsigned int nl, ol, i;
+	dog_t *dog;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
-
-	perrito = malloc(sizeof(dog_t));
-	if (perrito == NULL)
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
 		return (NULL);
-	/* NAME */
-	for (i = 0; name[i]; i++)
+	for (nl = 0; name[nl]; nl++)
 		;
-	leni = i + 1;
-	perrito->name = malloc(sizeof(char) * leni);
-	if (perrito->name == NULL)
+	nl++;
+	dog->name = malloc(nl * sizeof(char));
+	if (dog->name == NULL)
 	{
-		free(perrito);
+		free(dog);
 		return (NULL);
 	}
-	/* llenar NAME */
-	for (i = 0; i < leni; i++)
-		perrito->name[i] = name[i];
-	/* llenando AGE */
-	perrito->age = age;
-	/* OWNER */
-	for (j = 0; owner[j]; j++)
+	for (i = 0; i < nl; i++)
+		dog->name[i] = name[i];
+	dog->age = age;
+	for (ol = 0; owner[ol]; ol++)
 		;
-	lenj = j + 1;
-	perrito->owner = malloc(sizeof(char) * lenj);
-	if (perrito->owner == NULL)
+	ol++;
+	dog->owner = malloc(ol * sizeof(char));
+	if (dog->owner == NULL)
 	{
-		free(name);
-		free(perrito);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
-	/* llenar OWNER */
-	for (j = 0; j < lenj; j++)
-		perrito->owner[j] = owner[j];
-
-	return (perrito);
+	for (i = 0; i < ol; i++)
+		dog->owner[i] = owner[i];
+	return (dog);
 }
