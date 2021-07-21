@@ -4,6 +4,7 @@
  * print_name - funcion imprimir nombre
  *@name: puntero nombre
  *@f: puntero f
+ *Return : f
  */
 
 void print_name(char *name, void (*f)(char *))
