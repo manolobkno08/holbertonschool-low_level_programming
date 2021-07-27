@@ -59,11 +59,11 @@ void print_all(const char * const format, ...)
 {
 	unsigned int i, j;
 
-	printf_t p[] = {
+	print_t p[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"i", print_int},
-		{"f", print_float}
+		{"f", print_float},
 		{NULL, NULL}
 	};
 
