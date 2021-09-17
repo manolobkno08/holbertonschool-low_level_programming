@@ -1,5 +1,10 @@
  #include "lists.h"
-
+/**
+ * add_dnodeint_end - add new node
+ * @head: double pointer
+ * @n: node value
+ * Return: Always EXIT_SUCCESS.
+ */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	/*create a new node*/
