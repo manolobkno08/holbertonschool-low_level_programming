@@ -3,3 +3,24 @@
 # Low Level Programming
 
 > This repository contains projects under the Holberton low-level programming curriculum. The projects it contains focus primarily on the use of the C programming language.
+- variables / if / else / while
+- functions / nested / loops
+- debugging
+- pointers / arrays / strings
+- recursion
+- static libraries
+- argc / argv
+- malloc / free
+- preprocessor
+- structures / typedef
+- function pointers
+- variadic functions
+- singly linked lists
+- bit manipulation
+- doubly linked lists
+- dynamic libraries
+
+
+# Authors
+
+> **Manuel Alejandro Gomez**
