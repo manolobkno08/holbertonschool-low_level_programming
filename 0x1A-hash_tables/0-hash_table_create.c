@@ -10,13 +10,15 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	/*Create memory space for hash table*/
 	hash_table_t *hs = NULL;
+	unsigned long int i;
 
 	hs = (hash_table_t *)malloc(sizeof(hash_table_t));
 	if (hs == NULL)
 		return (NULL);
 
 	/*Create memory space for array*/
-	hs->array = malloc(sizeof(hash_node_t) * size);
+	hs->size = size;
+	hs->array = malloc(sizeof(hash_node_t *) * size);
 	if (!hs->array)
 	{
 		free(hs);
@@ -25,7 +27,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	/*Initialize nodes to 0*/
-	memset(hs->array, 0, sizeof(hash_node_t) * size);
+	for (i = 0; i < size; i++)
+	{
+		hs->array[i] = NULL;
+	}
 
 	return (hs);
 }
