@@ -26,7 +26,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 
-	/*Initialize nodes to 0*/
+	/*Initialize nodes to NULL*/
 	for (i = 0; i < size; i++)
 	{
 		hs->array[i] = NULL;
