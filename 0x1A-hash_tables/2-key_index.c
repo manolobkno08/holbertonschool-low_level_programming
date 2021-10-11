@@ -4,7 +4,7 @@
  * key_index - assign a key
  * @key: new key
  * @size: size of array
- * Return: Always EXIT_SUCCESS.
+ * Return: Index.
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
