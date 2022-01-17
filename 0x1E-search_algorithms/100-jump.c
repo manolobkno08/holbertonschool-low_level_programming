@@ -37,31 +37,5 @@ int print_iterations(int *array, int start, int end)
 
 int jump_search(int *array, size_t size, int value)
 {
-
-	size_t middle;
-	size_t start = 0;
-	size_t end = size - 1;
-
-	if (array == NULL || size == 0)
-		return (-1);
-
-	while (start <= end)
-	{
-		printf("Searching in array: ");
-		print_iterations(array, start, end);
-		middle = (start + end) / 2;
-
-		if (array[middle] < value)
-		{
-			start = middle + 1;
-		}
-		else if (array[middle] > value)
-		{
-			end = middle - 1;
-		}
-		else
-			return (middle);
-	}
-
-	return (-1);
+	return 0;
 }
